@@ -1,0 +1,402 @@
+/* Seccion principal */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.inicio header{
+    padding: 10px;
+}
+
+.opciones{
+    position:fixed;
+    background-color: rgb(31, 114, 181);
+    margin-left: 60px;
+    padding: 1px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+
+.opciones a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.nav-bar{
+    position:relative;
+    background-color: rgb(31, 114, 181);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 25px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: grey;
+}
+
+.encabezado-img {
+    background-image: url("https://www.louis-pommery.com/build/images/fond-immeubles.e00985fd.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #090909;
+}
+
+.encabezado-img h2 {
+    position: absolute;
+    font-size: 30px;
+    height: 250px;
+    text-align: center;
+}
+
+/* seccion inicial */
+
+.titulo-seccion{
+    font-family:fantasy;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.content {
+    text-align: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.foto {
+    display: flex;
+    justify-content: space-around;
+    & img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+}
+
+.descripcion{
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 10px; 
+}
+
+.content .descripcion h3{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.content .descripcion .especial{
+    color: #333;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.content .descripcion p{
+    max-width: 700px;
+    margin: auto;
+    color:darkgray;
+}
+
+.content .descripcion ul{
+    max-width: 700px;
+    margin: auto;
+    color:darkgray
+}
+
+.Caracteristicas{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.descripcion .Caracteristicas.col{
+    width: 50%;
+}
+
+.descripcion .Caracteristicas .col i{
+    color: rgb(31, 114, 181);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(31, 114, 181) ;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.descripcion .Caracteristicas .col p{
+    text-align:initial;
+    padding: 10px;
+}
+
+/* Seccion Formacion */
+
+.formacion{
+    background-color: rgb(153, 157, 173);
+    padding: 140px 0 100px 0;
+    text-align: center;
+    padding:40px;
+}
+
+.formacion .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.formacion .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;}
+
+.formacion .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.formacion .contenido-seccion .info .col{
+    width: 45%;
+}
+
+.formacion .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: rgb(17, 80, 188);
+    font-weight: bold;
+    border: 2px solid rgb(17, 80, 188);
+    padding: 10px
+}
+
+
+.formacion .contenido-seccion .info .col .titulo:hover{
+    background-color: rgb(15, 14, 14);
+}
+
+.formacion .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.formacion .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid rgb(17, 80, 188);
+}
+
+.formacion .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+
+.formacion .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.formacion .contenido-seccion .info .col table p{
+    font-size: 14px;
+}
+
+/* Seccion de experiencia laboral */
+
+.experiencia{
+    background-color: #201e1e;
+    padding: 60px 0 160px 0;
+    color: #efeded;
+    text-align: center;
+    
+}
+
+.experiencia .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.experiencia .contenido-seccion .titulo-seccion h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 0.5mm;
+}
+
+.hide .p{
+    font-size: 20px;
+    padding: 0px;
+    color: #efeded;
+}
+
+.delineante_btn{
+    background-color: grey;
+    border: none;
+    border-radius: 40px;
+    color:white;
+    padding: 10px 10px;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px opx grey;
+    cursor:pointer;
+}
+
+.delineante_btn:hover{
+    box-shadow: none;
+    background-color: black;
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+}
+
+.voluntariado_btn{
+    background-color: grey;
+    border: none;
+    border-radius: 40px;
+    color:white;
+    padding: 10px 10px;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px opx grey;
+    cursor:pointer;
+}
+
+.voluntariado_btn:hover{
+    box-shadow: none;
+    background-color: black;
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+}
+
+.voluntariado_btn{
+    background-color: grey;
+    border: none;
+    border-radius: 40px;
+    color:white;
+    padding: 10px 10px;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px opx grey;
+    cursor:pointer;
+}
+
+.voluntariado_btn:hover{
+    box-shadow: none;
+    background-color: black;
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+}
+
+.practica_btn{
+    background-color: grey;
+    border: none;
+    border-radius: 40px;
+    color:white;
+    padding: 10px 10px;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px opx grey;
+    cursor:pointer;
+}
+
+.practica_btn:hover{
+    box-shadow: none;
+    background-color: black;
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+
+.contacto .contenido-seccion .fila .col h2{
+    color:rgb(17, 80, 188);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.redes i{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/* Adaptacion */
+
+@media screen and (max-width:800px) {
+    .inicio{
+        display: block;
+        text-align:center;
+        justify-content:center;
+    }
+    
+    .descripcion{
+        display: block;
+    }
+
+    .descripcion .Caracteristicas .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .formacion .contenido-seccion .info{
+        display: block;
+    }
+
+    .formacion .contenido-seccion .info .col{
+        width: 90%;
+        margin: auto;
+    }
+
+    .formacion .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .formacion .contenido-seccion .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+}
